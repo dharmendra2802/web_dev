@@ -1,0 +1,391 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+header
+{
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10px;
+	position: fixed;
+	background: white;
+	top: 0px;
+	width: 100%;
+	
+}
+#header-img
+{
+	width: 50px;
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: -7px;
+}
+span
+{
+	margin-left: 15px;
+
+	font-size: 40px;
+	letter-spacing: 6px;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+/* ******************************** */
+#nav-bar
+{
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.nav-link
+{	
+	font-size: 24px;
+	margin-right: 55px;
+	text-decoration: none;
+	color: black;
+}
+
+#feature-div
+{
+	margin: 0 auto;
+	margin-top: 25vh;
+	width: 70%;
+	box-sizing: border-box;
+	padding: 5px 30px;
+
+}
+.feat
+{
+	padding: 8px 10px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.feat img
+{
+	width: 80px;
+	height: 80px;
+	margin-right: 25px;
+	margin-top: 15px;
+}
+
+.feat div
+{
+	width: 80%;
+}
+
+.feat h3
+{
+	font-size: 35px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+.feat p
+{
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: 'Rubik', sans-serif; 
+}
+
+
+#price-div
+{
+	margin: 80px auto 10px;
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.range
+{
+	border:1px #bdc3c7 solid;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.range:hover
+{
+	box-shadow: 2px 10px 15px 5px #bdc3c7;
+	transition: 1s;
+}
+
+.type-head
+{	width: 100%;
+	font-size: 28px;
+	height: 80px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+	background: #bdc3c7 ;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price
+{
+	font-family: 'Courier Prime', monospace;
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.list
+{
+	height: 50%;
+}
+li
+{
+	list-style: none;
+	margin-top: 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+	text-align: center;	
+}
+.price-button
+{
+	font-size: 18px;
+	font-family:'Rubik', sans-serif;
+	padding: 3px 15px;
+	margin: 0 auto; 
+	margin-top: 18px;
+	margin-bottom: 15px;	
+	background-color: #F1C40F;
+	border: 1px solid #F1C45F;
+	color: #1F3806;
+	width: 84px;
+	height: 34px;
+	order: 5;
+}
+
+.price-button:hover
+{
+	cursor: pointer;
+	animation-timing-function: linear;
+	transition-duration: .8s;
+	background: #059862;
+	color: white;
+	width: 110px;
+	height: 45px;
+	border:none;
+	font-weight: bolder;
+
+}
+
+#video-div
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 60px auto;
+
+}
+
+#req-div
+{	
+	margin: 60px auto 0;
+	padding: 8px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#req-div h2
+{
+	font-size: 30px;
+	font-family: 'Roboto Mono', monospace;
+	margin: 10px 0;
+}
+#req-div p
+{
+	font-size: 15px;
+	font-family: 'Hubballi', cursive;
+}
+
+#form
+{
+	margin: 15px 0 ;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.input
+{
+	width: 80%;
+	height: 20%;
+	padding: 5px 10px;
+	margin-top: 10px;
+	font-size: 15px;
+	border:1px solid #bdc3cf;
+	border-radius: 8px;
+	box-shadow: 3px 8px 5px  #bdc3c7;
+}
+
+.input:focus , .input:hover
+{
+	outline: none;
+	width: 85%;
+	transition: 1s;
+	font-size: 18px;
+	padding: 6px 10px;
+
+}
+
+#submit
+{	
+	margin-top: 20px;
+	width: 30%;
+	height: 30px;
+	border-radius: 8px;
+	padding: 2px;
+	background: #FBAE04;
+	color: black;
+	border:1px solid #FBAEff;
+	font-weight: bolder;
+
+}
+
+#submit:hover
+{
+	cursor: pointer;
+	border:none;
+	width: 35%;
+	height:35px;
+	transition: 1s;
+	font-size: 16px;
+	background:#1D8BF7;
+	color: white;
+}
+
+
+footer
+{
+	margin-top: 70px;
+	border-top: 10px solid #464b4f;
+	padding: 15px 25px;
+	background:#95a3ad;
+
+}
+
+footer h3
+{
+	font-size: 25px;
+	margin-bottom: 10px;
+	
+}
+
+#social
+{
+
+}
+.social-icon
+{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	margin-top: -2px;
+}
+
+.social-sec
+{
+
+	display: flex;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+.social-sec a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.social-sec a:hover
+
+{
+	color:white;
+	font-size: 20px;
+	transition: .7s;
+}
+
+
+
+
+
+/* media queries */
+
+@media(max-width:750px)
+{
+	span
+	{
+		font-size: 24px;
+		letter-spacing: 2px;
+		margin-left:2px;
+	}
+	.nav-link
+	{
+		font-size: 18px;
+		margin-right: 15px;
+	}
+
+.feat img
+{
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.feat h3
+{
+	font-size: 25px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.feat p
+{
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-family: 'Rubik', sans-serif; 
+}
+
+#feature-div
+{
+	width: 80%;
+	margin-top:15vh; 
+}
+.type-head
+{
+	font-size: 20px;
+}
+.price-button
+{
+	width: 75px;
+}
+.price-button:hover
+{
+	width: 85px;
+}
+
+}
