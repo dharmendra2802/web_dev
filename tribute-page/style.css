@@ -1,0 +1,135 @@
+*
+{   
+	padding: 0px;
+	margin:0px;
+}
+#main
+{
+	background-color: rgba(225,181,1,.6) ;
+}
+header
+{
+	border-bottom:15px solid #018863;
+	background-color:#101820FF;
+	padding-bottom: 10px;
+}
+#title
+{
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Rowdies', cursive;
+	margin-bottom: 3px;
+	letter-spacing: 4px;	
+	color:#018863 ;
+
+}
+
+header p
+{	color:#018863;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+}
+#img-div
+{
+	margin: 20px ;
+	padding: 10px;
+	position: relative;	
+}
+#image
+{
+	max-width: 70%;
+	display: block;
+	height: auto;
+	margin:0 auto;
+	position: relative;
+}
+
+#img-caption
+{
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+	margin-top: 15px;
+	color:#018863;
+	font-weight: bolder;
+}
+
+
+
+main
+{
+	/*border:1px solid red;*/
+	margin: 10px 20px;
+	margin-bottom: 28px;
+	padding: 10px;
+}
+
+#tribute-info
+{	border-bottom: 10px solid #018863;
+	font-size: 35px;
+	font-family: 'Cabin', sans-serif;
+	margin-bottom: 8px;
+	padding-bottom: 4px;
+
+}
+
+li
+{
+	margin-top: 15px;
+	padding: 2px;
+	font-size: 18px;
+	list-style: square;
+	margin-left: 28px;
+	word-spacing: 2px;
+	font-family: 'Rubik', sans-serif;
+	color:#101820FF;
+}
+
+strong
+{
+	font-size: 22px;
+}
+
+#qoute
+{
+	margin: 70px 50px 0px 50px;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Sacramento', cursive;
+}
+#qoute p
+{
+	margin-bottom: 20px;
+}
+
+
+footer
+{
+	border-top:10px solid #018863;
+	padding: 40px 20px;
+	background-color: #101820FF;
+	margin: 80px 0px 0px;
+}
+
+.footer-p
+{
+	font-size: 22px;
+	color:#018863;
+	letter-spacing: 3px;
+}
+
+.tribute-link
+{	font-family: 'Cabin', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(225,181,1,.8);
+}
+
+.tribute-link:hover
+{
+	color: White;
+	font-size: scale(.2);
+}
