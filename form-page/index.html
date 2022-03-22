@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+</head>
+<body id="body">
+
+	<div id="form-cont">
+	<header>
+		<div id="logo">
+			<h2 class="logo-head">Battleground</h2>
+			<h2  class="logo-head">Mobile India</h2>
+		</div>
+
+
+		<h1 id="title">Feedback Form</h1>
+		<p id="discription">Thank you for giving your precious feedback and help us improving our favorite game </p>
+
+	</header>
+	
+	<form id="survey-form" >
+		<div class="form-part">
+			<label for="name" class="label-div">Name</label>
+			<input class="input" type="text" name="name" placeholder="Enter your name" required>
+		</div>
+		
+		<div class="form-part">
+			<label for="game-id" class="label-div">In-game id</label>
+			<input class="input" type="text" name="game-id" placeholder="Your in-game id" required>
+		</div>
+		
+		<div class="form-part">
+			<label name="email" class="label-div">Email</label>
+			<input class="input" type="email" name="email" placeholder="Enter your email" required>
+		</div>
+
+		<div class="form-part">
+			<label name="numer-label" class="label-div">Age 
+			</label>
+			<input  class="input" type="number" name="number" placeholder="Enter your age" required min="10" max="90">
+		</div>
+		
+		<div class="form-part">
+			<p id="map">Select your favorite map</p>
+			<select id="dropdown" required>
+				<option disabled selected value>Select map</option>
+				<option value="erangle">Erangle</option>
+				<option value="sanhok">Sanhok</option>
+				<option value="miramar">Miramar</option>
+				<option value="vikendi">Vikendi</option>
+				<option value="karakin">Karakin</option>
+				<option value="livik">Livik</option>
+			</select>
+		</div>
+		
+		<div class="form-part flex-col">
+			<p class="para">Would you like to try other battleground games as well</p>
+			<div class="radio-box">
+			<label class="radio-label"><input class="radio" type="radio" name="radio" value="never">Never</label>
+			</div>
+			<div class="radio-box">
+			<label><input class="radio" type="radio" name="radio" value="maybe-not">Maybe not</label>
+			</div>
+			<div class="radio-box">
+			<label><input class="radio" type="radio" name="radio" value="one-day">One day maybe</label>
+			</div>
+			<div class="radio-box">
+			<label><input class="radio" type="radio" name="radio" value="love-to">love to</label>
+			</div>
+		</div>
+
+
+		<div class="form-part flex-col">
+			<p class="para">
+				What you would like us to do ?
+				<span class="clue"> ( Check all that apply )</span>
+			</p>
+			
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="modes">
+			More modes</label>
+			</div>
+			
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="mapes">
+			More mapes</label>
+			</div>
+
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="graphics">
+			Improve graphics</label>
+			</div>
+
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="anticheat">
+			More anti-cheat filters</label>	
+			</div>
+
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="guns-vehicles">
+			New utilities/Vehicle</label>		
+			</div>
+
+			<div class="radio-box">	
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="events">
+			More Events</label>		
+			</div>
+
+			<div class="radio-box">
+			<label> <input class="checkbox-opt" type="checkbox" name="prefer" value="cool">
+			Some cool and funny features</label>
+			</div>
+
+		</div>
+
+		<div class="form-part flex-col">
+		
+		<p class="para">Any more suggestions or comments</p>
+		<textarea name="comment" placeholder="Enter your comment here "></textarea>
+		</div>
+
+		<div class="form-part " id="button">
+		<button type="submit" id="submit" >Shoot</button>
+		</div>
+
+	</form>
+	<div id="blur"></div>
+	</div>
+
+</body>
+</html>
