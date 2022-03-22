@@ -1,0 +1,194 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	--text-main:#1b1b1b;
+	--gray-shade1:#555d50;
+	--text-sec:#3b3c36;
+}
+
+
+
+/*body**********/
+body
+{
+}
+/********* */
+
+#navbar
+{
+	border-right: 4px solid var(--gray-shade1);
+}
+
+/* main sectoion */
+#main-doc
+{
+
+}
+
+
+
+#navbar header
+{
+	font-size: 40px;
+	font-family: sans-serif;
+	margin-bottom: 18px;
+	padding: 10px 20px;
+	text-align: center;
+	border-bottom: 5px solid var(--gray-shade1);
+}
+#nav-list
+{	
+	 margin: 0 5px 5px 0;
+}
+
+/*  Scrollbar #nav-list::-webkit-scrollbar
+{
+	width: 15px;
+}
+#nav-list::-webkit-scrollbar-track
+{
+	background-color: #dcdcdc;
+	border-radius: 8px;
+}
+#nav-list::-webkit-scrollbar-thumb
+{
+	background: red;
+}
+
+/***********/
+
+
+
+#nav-list li
+{
+	border-bottom: 2px solid var(--gray-shade1);
+	padding: 10px 0px 1px 24px;
+	margin-top: 5px;
+	margin-right: 8px;
+}
+
+
+.nav-links
+{
+	border:1px ;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 10px 0px;
+	color: var(--text-sec);	
+}
+
+/**************************/
+/******* main section ***********/
+.main-head
+{
+	
+	font-size: 40px;
+	margin-bottom:15px ;
+	font-family: sans-serif;
+	color: var(--text-main);
+
+}
+.main-section
+{
+	padding-bottom: 25px;
+	margin-top: 15px;
+	border-bottom: 2px solid var(--gray-shade1); 
+}
+
+.main-section  h3
+{
+	font-size: 25px;
+	margin: 10px 0;
+}
+.main-section strong
+{
+	font-size: 20px;
+}
+
+article
+{
+	padding:5px; 
+	font-size: 18px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+.para
+{
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 25px;
+	font-family: 'Lato', sans-serif;
+	word-spacing: 1px;
+	margin-bottom: 8px;
+}
+
+#feat-list
+{
+	list-style: square;
+	margin-left: 18px;
+
+}
+#feat-list li ,li p
+{
+	margin: 8px 10px 0;
+
+}
+
+.head-type2
+{
+	font-size: 24px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.code
+{
+	margin: 15px 25px;
+	padding: 15px;
+	background-color: #d9dddc;
+	border-bottom: 5px solid #777b7e;
+	color: #48494b;
+	width: 80%;
+}
+.code p
+{
+	font-size: 20px;
+}
+.ex
+{
+	overflow-x:scroll; 
+}
+
+/***********/
+/***** media *******/
+@media(max-width:700px )
+{
+	body
+	{
+		flex-direction:column;
+	}
+	
+	#navbar
+	{
+		border-right: none;
+		border-bottom: 4px solid var(--gray-shade1);	
+		flex-basis: 40vh;
+		overflow: hidden;
+	}
+	#nav-list li:last-child
+	{
+		border-bottom: none;
+		padding-bottom: 10px;
+	}
+
+}
+
+
+
+/* ****************** */
+
+

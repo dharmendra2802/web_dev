@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git Documentation</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+		<nav id="navbar">
+				<header>Git Documentation</header>
+				<ol id="nav-list">
+				<li><a href="#git" class="nav-links">What is Git</a></li>
+				<li><a href="" class="nav-links">What is Github</a></li>
+				<li><a href="" class="nav-links">Version Control System</a></li>
+				<li><a href="" class="nav-links">Install Git on Windows</a></li>
+				<li><a href="" class="nav-links">Git Init</a></li>
+				<li><a href="" class="nav-links">Git Add</a></li>
+				<li><a href="" class="nav-links">Git Commit</a></li>
+				<li><a href="" class="nav-links">Git Clone</a></li>
+				<li><a href="" class="nav-links">Git Stash</a></li>
+				<li><a href="" class="nav-links">Git Fork</a></li>
+				<li><a href="" class="nav-links">Git Repository</a></li>
+				<li><a href="" class="nav-links">Git Index</a></li>
+				<li><a href="" class="nav-links">Git Checkout</a></li>
+				<li><a href="" class="nav-links">Git Revert</a></li>
+				<li><a href="" class="nav-links">Git Log</a></li>
+				<li><a href="" class="nav-links">Git Fetch</a></li>
+				<li><a href="" class="nav-links">Git Pull</a></li>
+				<li><a href="" class="nav-links">Git Push</a></li>
+			
+				</ol>
+		</nav>
+
+		<main id="main-doc">
+			
+				<section class="main-section">
+				<header class="main-head" id="Whatisgit">What is Git</header>
+				<article>
+					<p class="para">
+						Git is an open-source distributed version control system. It is designed to handle minor to major projects with high speed and efficiency. It is developed to co-ordinate the work among the developers. The version control allows us to track and work together with our team members at the same workspace.
+					</p>
+					<p class="para">
+						Git is foundation of many services like GitHub and GitLab, but we can use Git without using any other Git services. Git can be used privately and publicly.
+					</p>
+					<p class="para">
+						Git was created by Linus Torvalds in 2005 to develop Linux Kernel. It is also used as an important distributed version-control tool for the DevOps.
+					</p>
+
+					<div>
+						<h3>Feature of Git</h3>
+						<p  class="para">Some remarkable features of Git are as follows:</p>
+						<ul id="feat-list">
+							<li>
+								<strong>Open Source
+								</strong>
+								<p class="para">Git is an open-source tool. It is released under the GPL (General Public License) license.</p>
+							</li>
+							<li>
+								<strong>Scalable</strong>
+								<p class="para">Git is scalable, which means when the number of users increases, the Git can easily handle such situations.</p>
+							</li>
+							<li>
+								<strong>Distributed</strong>
+								<p class="para">One of Git's great features is that it is distributed. Distributed means that instead of switching the project to another machine, we can create a "clone" of the entire repository. Also, instead of just having one central repository that you send changes to, every user has their own repository that contains the entire commit history of the project. We do not need to connect to the remote repository; the change is just stored on our local repository. If necessary, we can push these changes to a remote repository.
+								</p>
+							</li>
+							<li>
+								<strong>Security</strong>
+								<p class="para">Git is secure. It uses the SHA1 (Secure Hash Function) to name and identify objects within its repository. Files and commits are checked and retrieved by its checksum at the time of checkout. It stores its history in such a way that the ID of particular commits depends upon the complete development history leading up to that commit. Once it is published, one cannot make changes to its old version.</p>
+							</li>
+							<li>
+								<p>
+									<strong>Speed</strong>
+									<p class="para">Git is very fast, so it can complete all the tasks in a while. Most of the git operations are done on the local repository, so it provides a huge speed. Also, a centralized version control system continually communicates with a server somewhere.</p>
+								</p>
+							</li>	
+						</ul>
+					</div>
+				</article>	
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="Whatisgithub">What is GitHub</header>
+				<article>
+					<p class="para">
+						GitHub is a Git repository hosting service. GitHub also facilitates with many of its features, such as access control and collaboration. It provides a Web-based graphical interface.
+					</p>
+					<p class="para">
+						GitHub is an American company. It hosts source code of your project in the form of different programming languages and keeps track of the various changes made by programmers.
+					</p>
+					<p class="para">
+						It offers both distributed version control and source code management (SCM) functionality of Git. It also facilitates with some collaboration features such as bug tracking, feature requests, task management for every project.
+					</p>
+
+					<div>
+						<h3>Feature of GitHub</h3>
+						<p  class="para">GitHub is a place where programmers and designers work together. They collaborate, contribute, and fix bugs together. It hosts plenty of open source projects and codes of various programming languages</p>
+						<ul id="feat-list">
+							<li>
+									<strong>Collaboration</strong>
+							</li>
+							<li>
+									<strong>Integrated issue and bug tracking</strong>
+							</li>
+							<li>
+									<strong>Graphical representation of branches</strong>
+							</li>
+							<li>
+									<strong>Project management</strong>
+							</li>
+							<li>
+									<strong>Git repositories hosting</strong>
+							</li>
+							<li>
+									<strong>Team management</strong>
+							</li>
+							<li>
+									<strong>Code hosting</strong>
+							</li>		
+						</ul>
+					</div>
+				</article>	
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="vcs">Version Control System</header>
+				<article>
+					<p class="para">
+						A version control system is a software that tracks changes to a file or set of files over time so that you can recall specific versions later. It also allows you to work together with other programmers.
+					</p>
+					<p class="para">
+						The version control system is a collection of software tools that help a team to manage changes in a source code. It uses a special kind of database to keep track of every modification to the code.
+					</p>
+					
+					<h3>Benefits of the Version Control System</h3>
+						<p  class="para">The Version Control System is very helpful and beneficial in software development; developing software without using version control is unsafe. It provides backups for uncertainty. Version control systems offer a speedy interface to developers. It also allows software teams to preserve efficiency and agility according to the team scales to include more developers.
+						</p>
+
+					<h3>Types of Version Control System</h3>
+					<ul id="feat-list">
+							<li>
+									<strong>Localized version Control System</strong>
+							</li>
+							<li>
+									<strong>Centralized version control systems</strong>
+							</li>
+							<li>
+									<strong>Distributed version control systems</strong>
+							</li>
+					</ul>
+
+				</article>	
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="window">How to Install Git in Windows</header>
+				<article>
+					<p class="para">
+						To use Git, you have to install it on your computer. Even if you have already installed Git, it's probably a good idea to upgrade it to the latest version. You can either install it as a package or via another installer or download it from its official site.
+					</p>
+					<h3>How to download Git?</h3>
+					<ul class="feat-list">
+						<li>
+							<span class="head-type2">Step 1</span>
+							<p class="para">To download the Git installer, visit the Git's official site and go to download page. The link for the download page is <a href="https://git-scm.com/downloads">Click me</a> Click on the package given on the page as download 2.23.0 for windows. The download will start after selecting the package</p>
+						</li>
+							<li>
+							<span class="head-type2">Step 2</span>
+							<p class="para">Click on the downloaded installer file and select yes to continue. After the selecting yes the installation begins, and the screen will look like as</p>
+						</li>
+						<li>
+							<span class="head-type2">Step 3</span>
+							<p class="para">Default components are automatically selected in this step. You can also choose your required part.</p>
+						</li>
+						<li>
+							<span class="head-type2">Step 4</span>
+							<p class="para">The default Git command-line options are selected automatically. You can choose your preferred choice. Click next to continue.</p>
+						</li>
+						<li>
+							<span class="head-type2">Step 5</span>
+							<p class="para">The default transport backend options are selected in this step. Click next to continue.</p>
+						</li>
+						<li>
+							<span class="head-type2">Step 6</span>
+							<p class="para">Select your required line ending option and click next to continue.</p>
+						</li>						
+						<li>
+							<span class="head-type2">Step 7</span>
+							<p class="para">Select preferred terminal emulator clicks on the next to continue.</p>
+						</li>						
+						<li>
+							<span class="head-type2">Step 8</span>
+							<p class="para">This is the last step that provides some extra features like system caching, credential management and symbolic link. Select the required features and click on the next option.</p>
+						</li>
+						<li>
+							<span class="head-type2">Step 9</span>
+							<p class="para">The files are being extracted in this step.<br>Therefore, The Git installation is completed. Now you can access the Git Gui and Git Bash.</p>
+						</li>
+						
+					</ul>					
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="init">Git Init</header>
+				<article>
+					<p class="para">
+						The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a Git project. Several Git commands run inside the repository, but init command can be run outside of the repository.
+					</p>
+					<p class="para">
+						The git init command creates a .git subdirectory in the current working directory. This newly created subdirectory contains all of the necessary metadata. These metadata can be categorized into objects, refs, and temp files. It also initializes a HEAD pointer for the master branch of the repository.
+					</p>
+					<h3>Create a Repository for a Blank (New) Project:</h3>
+					<p class="para">To create a blank repository, open command line on your desired directory and run the init command as follows:</p>
+					<div class="code">
+						<p>$ git init </p>
+					</div>
+					<p class="para">The above command will create an empty .git repository. Suppose we want to make a git repository on our desktop. To do so, open Git Bash on the desktop and run the above command.</p>
+					<p class="para">To create a file, run the cat or touch command as follows:</p>
+					<div class="code">
+						<p>$ touch <file Name> </p>
+					</div>
+					<p class="para">To add files to the repository, run the git add command as follows:</p>
+					<div class="code">
+						<p>$ git add <file name> </p>
+					</div>
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="add">Git Add</header>
+				<article>
+					<p class="para">
+						The git add command is used to add file contents to the Index (Staging Area).This command updates the current content of the working tree to the staging area. It also prepares the staged content for the next commit. Every time we add or update any file in our project, it is required to forward updates to the staging area.
+					</p>
+					<p class="para">
+						The git add command is a core part of Git technology. It typically adds one file at a time, but there some options are available that can add more than one file at once.
+					</p>
+					<p class="para">
+						The "index" contains a snapshot of the working tree data. This snapshot will be forwarded for the next commit.
+					</p>
+					<p class="para">
+						The git add command can be run many times before making a commit. These all add operations can be put under one commit. The add command adds the files that are specified on command line.
+					</p>
+
+					<h3>Git Add Files</h3>
+					<p class="para">Git add command is a straight forward command. It adds files to the staging area. We can add single or multiple files at once in the staging area. It will be run as:</p>
+					<div class="code">
+						<p>$ git add <File name></p>
+					</div>
+					<h3>Git Add All</h3>
+					<p class="para">We can add more than one files in Git, but we have to run the add command repeatedly. Git facilitates us with a unique option of the add command by which we can add all the available files at once. To add all the files from the repository, run the add command with -A option. We can use '.' Instead of -A option. This command will stage all the files at a time. It will run as follows:</p>
+
+					<div class="code">
+						<p>$ git add -A</p>
+					</div>
+					<p class="para">Or</p>
+					<div class="code">
+						<p>$ git add . </p>
+					</div>
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="commit">Git Commit</header>
+				<article>
+					<p class="para">
+						It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message. Every commit forms a parent-child relationship. When we add a file in Git, it will take place in the staging area. A commit command is used to fetch updates from the staging area to the repository
+					</p>
+					<p class="para">
+						Commits are the snapshots of the project. Every commit is recorded in the master branch of the repository. We can recall the commits or revert it to the older version. Two different commits will never overwrite because each commit has its own commit-id. This commit-id is a cryptographic number created by SHA (Secure Hash Algorithm) algorithm
+					</p>
+					<h3>Git Commit Command</h3>
+					<p class="para">
+						The commit command will commit the changes and generate a commit-id. The commit command without any argument will open the default text editor and ask for the commit message. We can specify our commit message in this text editor. It will run as follows:
+					</p>
+					<div class="code">
+						<p>$ git commit </p>
+					</div>
+
+				</article>			
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="clone">Git Clone</header>
+				<article>
+					<p class="para">
+						In Git, cloning is the act of making a copy of any target repository. The target repository can be remote or local. You can clone your repository from the remote repository to create a local copy on your system. Also, you can sync between the two locations.
+					</p>
+					
+					<h3>Git Clone Command</h3>
+					<p class="para">
+						The git clone is a command-line utility which is used to make a local copy of a remote repository. It accesses the repository through a remote URL
+					</p>
+					<div class="code">
+						<p>$ git clone <repository URL> </p>
+					</div>
+
+				</article>			
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="stash">Git Stash</header>
+				<article>
+					<p class="para">
+						Sometimes you want to switch the branches, but you are working on an incomplete part of your current project. You don't want to make a commit of half-done work. Git stashing allows you to do so. The git stash command enables you to switch branches without committing the current branch.
+					</p>
+					
+					<h3>Stashing Work</h3>
+					<p class="para">
+						Let's understand it with a real-time scenario. I have made changes to my project GitExample2 in two files from two distinct branches. I am in a messy state, and I have not entirely edited any file yet. So I want to save it temporarily for future use. We can stash it to save as its current status. To stash, let's have a look at the repository's current status. To check the current status of the repository, run the git status command. The git status command is used as:
+					</p>
+					<div class="code">
+						<p>$ git status  </p>
+					</div>
+					<p class="para">
+						From the above output, you can see the status that there are two untracked file design.css and newfile.txt available in the repository. To save it temporarily, we can use the git stash command. The git stash command is used as:
+					</p>
+					<div class="code">
+						<p>$ git stash </p>
+					</div>
+
+				</article>			
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="fork">Git Fork</header>
+				<article>
+					<p class="para">
+						A fork is a rough copy of a repository. Forking a repository allows you to freely test and debug with changes without affecting the original project. One of the excessive use of forking is to propose changes for bug fixing. To resolve an issue for a bug that you found, you can:
+					</p>
+
+					
+					<h3>When to use Fork</h3>
+					<p class="para">
+						Generally, forking a repository allows us to experiment on the project without affecting the original project. Following are the reasons for forking the repository
+					</p>
+					<h3>How to Fork a Repository</h3>
+					<p class="para">The forking and branching are excellent ways to contribute to an open-source project. These two features of Git allows the enhanced collaboration on the projects.</p>
+
+					<p class="para">Forking is a safe way to contribute. It allows us to make a rough copy of the project. We can freely experiment on the project. After the final version of the project, we can create a pull request for merging.</p>
+
+					<h3>Fork V/S Clone</h3>
+					<p class="para">
+						Sometimes people considered the fork as clone command because of their property. Both commands are used to create another copy of the repository. But the significant difference is that the fork is used to create a server-side copy, and clone is used to create a local copy of the repository.
+					</p>
+					<p class="para">There is no particular command for forking the repository; instead, it is a service provided by third-party Git service like GitHub. Comparatively, git clone is a command-line utility that is used to create a local copy of the project.</p>
+				</article>			
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="repository">Git Repository</header>
+				<article>
+					<p class="para">
+						In Git, the repository is like a data structure used by VCS to store metadata for a set of files and directories. It contains the collection of the files as well as the history of changes made to those files. Repository in Git is considered as your project folder. A repository has all the project-related data. Distinct projects have distinct repositories.
+					</p>
+
+					
+					<h3>Getting a Git Repository</h3>
+					<p class="para">There are two ways to obtain a repository. They are as follows:
+					</p>
+					<ul class="feat-list">
+						<li>
+							<p> Create a local repository and make it as Git repository.</p>
+						</li>
+						<li>	
+							<p>Clone a remote repository (already exists on a server).</p>
+						</li>
+					</ul>
+					
+				</article>			
+				</section>
+			
+				<section class="main-section">
+				<header class="main-head" id="index">Git Index</header>
+				<article>
+					<p class="para">
+						The Git index is a staging area between the working directory and repository. It is used to build up a set of changes that you want to commit together. To better understand the Git index, then first understand the working directory and repository.
+					</p>
+					<h3>Working Directory:</h3>
+					<p class="para">When you worked on your project and made some changes, you are dealing with your project's working directory. This project directory is available on your computer's filesystem. All the changes you make will remain in the working directory until you add them to the staging area.</p>
+
+					<h3>Staging area</h3>
+					<p class="para">The staging area can be described as a preview of your next commit. When you create a git commit, Git takes changes that are in the staging area and make them as a new commit. You are allowed to add and remove changes from the staging area. The staging area can be considered as a real area where git stores the changes.</p>
+
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="checkout">Git Checkout</header>
+				<article>
+					<p class="para">
+						In Git, the term checkout is used for the act of switching between different versions of a target entity. The git checkout command is used to switch between branches in a repository. Be careful with your staged files and commits when switching between branches.
+					</p>
+					<p class="para">The git checkout command operates upon three different entities which are files, commits, and branches. Sometimes this command can be dangerous because there is no undo option available on this command.</p>
+					<p class="para">It checks the branches and updates the files in the working directory to match the version already available in that branch, and it forwards the updates to Git to save all new commit in that branch.</p>
+
+
+					<h3>Checkout Branch</h3>
+					<p class="para">You can demonstrate how to view a list of available branches by executing the git branch command and switch to a specified branch.</p>
+					<div class="code">
+						<p>$ git branch </p>
+					</div>
+					<p class="para">Now, you have the list of available branches. To switch between branches, use the below command.</p>
+					<div class="code">$ git checkout <branchname></div>
+
+					<h3>Create and Switch Branch</h3>
+					<p class="para">The git checkout commands let you create and switch to a new branch. You can not only create a new branch but also switch it simultaneously by a single command. The git checkout -b option is a convenience flag that performs run git branch <new-branch>operation before running git checkout <new-branch>.</p>
+					<div class="code">$ git checkout -b <branchname> </div>
+					<h3>Checkout Remote Branch</h3>
+					<p class="para">Git allows you to check out a remote branch by git checkout command. It is a way for a programmer to access the work of a colleague or collaborator for review and collaboration. Each remote repository contains its own set of branches. So, to check out a remote branch, you have first to fetch the contents of the branch.</p>
+					<div class="code">$ git fetch --all  </div>
+					<div class="code">$ git checkout <remotebranch></div>
+
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="revert">Git Rivert</header>
+				<article>
+					<p class="para">In Git, the term revert is used to revert some changes. The git revert command is used to apply revert operation. It is an undo type command. However, it is not a traditional undo alternative. It does not delete any data in this process; instead, it will create a new change with the opposite effect and thereby undo the specified commit. Generally, git revert is a commit.</p>
+					<p class="para">It can be useful for tracking bugs in the project. If you want to remove something from history then git revert is a wrong choice.</p>
+					<p class="para">Moreover, we can say that git revert records some new changes that are just opposite to previously made commits. To undo the changes, run the below command:</p>
+					<div class="code">
+						<p>$ git revert </p>
+					</div>
+
+					<h3>Git Revert Options</h3>
+					<p class="para">Git revert allows some additional operations like editing, no editing, cleanup, and more. Let's understand these options briefly:</p>
+					<p class="para">< commit>: The commit option is used to revert a commit. To revert a commit, we need the commit reference id. The git log command can access it.</p>
+					<div class="code">
+						<p>$ git revert <commit-ish></p>
+					</div>
+
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="log">Git Log</header>
+				<article>
+					<p class="para">
+						The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates. But, all of this history will be useless if we cannot navigate it. At this point, we need the git log command
+					</p>
+					<p class="para">Git log is a utility tool to review and read a history of everything that happens to a repository. Multiple options can be used with a git log to make history more specific.</p>
+					<ul id="feat-list">
+							<li>
+								<strong>A commit hash</strong>
+								<p class="para">which is a 40 character checksum data generated by SHA (Secure Hash Algorithm) algorithm. It is a unique number.</p>
+							</li>
+							<li>
+								<strong>Commit Author metadata:</strong>
+								<p class="para">The information of authors such as author name and email.</p>
+							</li>
+
+							<li>
+								<strong>Commit Date metadata:</strong>
+								<p class="para">It's a date timestamp for the time of the commit.</p>
+							</li>
+						</ul>
+						<h3>Basic Git log</h3>
+						<p class="para">Git log command is one of the most usual commands of git. It is the most useful command for Git. Every time you need to check the history, you have to use the git log command. The basic git log command will display the most recent commits and the status of the head. It will use as:</p>
+						<div class="code">
+							<p>$ git log </p>
+						</div>
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="fetch">Git Fetch</header>
+				<article>
+					<p class="para">Git "fetch" Downloads commits, objects and refs from another repository. It fetches branches and tags from one or more repositories. It holds repositories along with the objects that are necessary to complete their histories to keep updated remote-tracking branches.</p>
+
+					<h3>How to fetch Git Repository</h3>
+					<p class="para">We can use fetch command with many arguments for a particular data fetch. See the below scenarios to understand the uses of fetch command.</p>
+					<ul class="feat-list">
+						<li>
+							<strong>Scenario 1: To fetch the remote repository:</strong>
+							<p class="para">We can fetch the complete repository with the help of fetch command from a repository URL like a pull command does. See the below output:</p>
+							<div class="code">
+								<p>$ git fetch< repository Url>  </p>
+							</div>
+						</li>
+						<li>
+							<strong>Scenario 2: To fetch a specific branch:</strong>
+							<p class="para">We can fetch a specific branch from a repository. It will only access the element from a specific branch. See the below output:</p>
+							<div class="code">
+								<p>$ git fetch <branch URL><branch name>  </p>
+							</div>
+						</li>
+						<li>
+							<strong>Scenario 3: To fetch all the branches simultaneously</strong>
+							<p class="para">The git fetch command allows to fetch all branches simultaneously from a remote repository. See the below example:</p>
+							<div class="code">
+								<p>$ git fetch -all  </p>
+							</div>
+						</li>
+						<li>
+							<strong>Scenario 4: To synchronize the local repository:</strong>
+							<p class="para">Suppose, your team member has added some new features to your remote repository. So, to add these updates to your local repository, use the git fetch command. It is used as follows.</p>
+							<div class="code">
+								<p>$ git fetch origin </p>
+							</div>
+						</li>
+					</ul>
+				</article>
+				</section>
+			
+				<section class="main-section">
+				<header class="main-head" id="pull">Git Pull / Pull Request</header>
+				<article>
+					<p class="para">The term pull is used to receive data from GitHub. It fetches and merges changes from the remote server to your working directory. The git pull command is used to pull a repository.</p>
+					<h3>The git pull command</h3>
+					<p class="para">The pull command is used to access the changes (commits)from a remote repository to the local repository. It updates the local branches with the remote-tracking branches. Remote tracking branches are branches that have been set up to push and pull from the remote repository. Generally, it is a collection of the fetch and merges command. First, it fetches the changes from remote and combined them with the local repository.</p>
+					<div class="code">
+						<p>$ git pull <option> [<repository URL><refspec>...] </p>
+					</div>
+					<p><strong>Option - </strong> Options are the commands; these commands are used as an additional option in a particular command. Options can be -q (quiet), -v (verbose), -e(edit) and more.</p>
+
+					<p><strong>Repository URL - </strong> Repository URL is your remote repository's URL where you have stored your original repositories like GitHub or any other git service. This URL looks like:</p>
+
+					<div class="code ex">
+						<p>https://github.com/ImDwivedi1/GitExample2.git </p>
+					</div>
+				</article>
+				</section>
+
+				<section class="main-section">
+				<header class="main-head" id="push">Git Push / Push Request</header>
+				<article>
+					<p class="para">The push term refers to upload local repository content to a remote repository. Pushing is an act of transfer commits from your local repository to a remote repository. Pushing is capable of overwriting changes; caution should be taken when pushing.</p>
+					<p class="para">Moreover, we can say the push updates the remote refs with local refs. Every time you push into the repository, it is updated with some interesting changes that you made. If we do not specify the location of a repository, then it will push to default location at origin master.</p>
+					<p class="para">The "git push" command is used to push into the repository. The push command can be considered as a tool to transfer commits between local and remote repositories. The basic syntax is given below:</p>
+					<div class="code ex">
+						<p>$ git push <option> [<Remote URL><branch name><refspec>...] </p>
+					</div>
+
+					<h3>Git Push Origin Master</h3>
+					<p class="para">Git push origin master is a special command-line utility that specifies the remote branch and directory. When you have multiple branches and directory, then this command assists you in determining your main branch and repository.</p>
+					<p class="para">Generally, the term origin stands for the remote repository, and master is considered as the main branch. So, the entire statement "git push origin master" pushed the local content on the master branch of the remote location.</p>
+					<div class="code">
+						<p>$ git push origin master </p>
+					</div>
+
+				</article>
+				</section>
+		</main>
+
+</body>
+</html>
