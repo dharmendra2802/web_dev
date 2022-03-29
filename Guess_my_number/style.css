@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Press Start 2P', cursive;
+	--s1-size : 20px;
+	--pc: #d6cfc7;
+	--pc-text: #fff600;
+	--pc-back:  black;
+	color: white;
+}
+
+
+/* text */ 
+/* body */
+body
+{
+	background: black;
+}
+
+/* icon */
+#icon
+{
+	width: 50px;
+	height: 40px;
+	margin-right: 8px;
+	margin-bottom: -4px;
+}
+
+
+/* heading */ 
+main
+{
+	font-size: 2.5rem;
+	border: 1ps solid red;
+	margin-top: 25px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+/* Section - 1 */
+#section-1
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	letter-spacing: 1.5px;
+	font-size: var(--s1-size);
+}
+
+/* section - 2 */
+#section-2
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+
+}
+.screen-block
+{
+	border: 5px solid var(--pc);
+	border-radius: 8px;
+	height: 320px;
+	width: 500px;
+	padding: 20px ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.inner
+{
+	width: 430px;
+	background: var(--pc-back);
+	position: relative;
+}
+.outer
+{
+	background: var(--pc);
+	padding-bottom: 35px;
+	position: relative;
+
+}
+
+/* screen */ 
+#screen
+{
+	font-size: 50px;
+	padding: 20px 8px 0;
+	display: flex;
+	width: 190px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* triangle */
+#triangle-right , #triangle-left
+{  
+	
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid var(--pc-text);
+}
+#triangle-left
+{
+	transform: rotate(180deg);
+}
+
+/* message */ 
+#msg
+{
+	font-size: 24px;
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+#hidden , #msg
+{
+	color: var(--pc-text);
+
+}
+
+/* section - 3 */
+#section-3
+{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#input-sec
+{
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#guess
+{
+	margin-right: 10px;
+	font-size: 30px;
+	text-align: center;
+	height: 50px;
+	width: 120px;
+	border-radius: 5px;
+	padding: 15px;
+	border: 5px solid green;
+	color: black;
+}
+#guess:focus
+{	
+	outline: none;
+}
+
+#hint
+{
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+
+/* chances */ 
+#chance
+{
+	margin-top: 20px;
+}
+
+/* heart */
+.heart
+{
+	height: 15px;
+	width: 15px;
+	background: red;
+	position: relative;
+	display: inline-block;
+	transform: rotate(-45deg);
+}
+.heart::before,.heart::after
+{
+
+	content: "";
+	height: 15px;
+	width: 15px;
+	background: red;
+	position: absolute;
+	border-radius: 50%;
+}
+.heart::before
+{
+	top : -7px;
+	left: 0;
+}
+.heart::after
+{
+	left: 7px;
+	top: 0;
+}
+
+
+/* submit */
+#submit
+{
+	border: none;
+	font-size: 24px;
+	padding: 8px 5px;
+	border-radius: 10px;
+	color: black;
+	margin-top: -6px;
+	border: 5px solid #FF641A;
+	background: var(--pc-text);
+	box-shadow: 0 5px #ffaa1d;
+}
+#submit:hover
+{
+	cursor: pointer;
+	background:  #ffd300;
+}
+#submit:active
+{
+	transform: translateY(2px);
+	box-shadow: 0 2px #ffdf00;
+	background:  #ffd300;
+
+}
+/* play again */
+#play-again
+{
+	
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 8px;
+	position: absolute;
+	bottom: 45px;
+	left: 70px;
+
+}
+
+#over-block p
+{
+	font-size: 40px;
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	background: -webkit-linear-gradient(#FAF400,#FE0002);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+#over-block img
+{
+	width: 50px;
+	height: auto;
+	position: absolute;
+	top: 100px;
+	left: 180px;
+}
+#over-block
+{
+	border: 1px solid green;
+	position: absolute;
+	height: 245px;
+	width: 420px;
+	background: black;
+	display: none;
+}
+#play-again
+{
+	color: #FAF400;
+	border: none;
+	background: #FE0002;
+}
+#play-again:hover
+{
+	cursor: pointer;
+	background: green;
+}
+
+
+
+/* switch on and offf */
+.dum-button-one
+{
+	right: 45px;
+	padding: 5px;
+	color: black;
+	width: 55px;
+	background: red;
+	border: none;	
+	position: absolute;
+	bottom: 5px;
+	border-radius: 5px;
+
+}
+.dum-button-one:hover
+{
+	cursor: pointer;
+}

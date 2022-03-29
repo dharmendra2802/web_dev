@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css
+	">
+	<title>Guess my number</title>
+</head>
+<body>
+
+	<section id="section-1">
+		<p class="text">Score - <span class="score">00</span></p>	
+		<p class="text"><img src="award.png" id="icon"> : <span id="high-score">00</span></p>	
+	</section>
+	<main>Guess My Number !</main>
+	<section id="section-2">
+		<div class="screen-block outer">
+		<div class="screen-block inner">
+			<div id="screen">
+				<div id="triangle-right"></div>
+				<span id="hidden">??</span>
+				<div id="triangle-left"></div>
+			</div>
+			<div id="msg">Start Guessing!!</div>
+		
+		</div>
+		<div id="over-block">
+			<p class="text">Game Over</p>	
+			<img src="dead.png">
+			<button id="play-again">Play Again</button>
+		</div>
+
+		
+		<button class="dum-button-one">OFF</button>
+		</div>
+	</section>
+
+	<section id="section-3">
+		<div id="input-sec">
+			<input type="text" name="guess" id="guess">
+			<button id="submit">Guess!!</button>
+		</div>
+		<span id="hint">( Between 1 - 20 )</span>
+		
+		<div id="chance">
+			<div class="heart one"></div>	
+			<div class="heart two"></div>
+			<div class="heart three"></div>
+			<div class="heart four"></div>
+			<div class="heart five"></div>
+		</div>
+	</section>
+
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
