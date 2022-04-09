@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Video popup</title>
+</head>
+<body>
+	<div class="container">
+		<div class="play" ></div>
+		<p >Play Video</p>
+	</div>
+	<div id="container2">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/cw21m2S5PXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p class="close">Close</p>
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+let play = document.querySelector(".play");
+const cont2 = document.querySelector("#container2");
+const close = document.querySelector(".close");
+const video = document.querySelector("iframe");
+play.onclick = function()
+{
+	play.classList.add("active");
+	cont2.classList.add("active");
+
+}
+close.onclick = function()
+{
+	cont2.classList.remove("active");
+	play.classList.remove("active");
+	
+}
+
+</script>
+
+</html>
