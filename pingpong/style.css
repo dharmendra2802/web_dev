@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root
+{
+    --dark: hsla(10, 13%, 27%, 1);
+    --light: hsla(23, 38%, 33%, 1);
+    --vlight: hsla(34, 55%, 77%, 1);
+    --board: rgba(256, 256, 256, 0.7);
+    /* --board:white; */
+    --ball:yellow;
+}
+
+/* removing default */
+* ,*::after,*::before
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-image: url(img/bg-pic.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* scroe section */
+#score
+{
+    /* border: 1px solid red; */
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 3vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+.score-glass-div {
+    background: rgba(78, 63, 62, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(78, 63, 62, 0.2);
+}
+
+.score-cont
+{
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--vlight);
+    /* font-family:'Courier New', Courier, monospace; */
+    letter-spacing: 1px;
+}
+
+
+/* ping ppong board */
+#cont
+{
+    /* border: 1px sandybrown solid; */
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 2px var(--light);
+    /* padding: 1vw; */
+}
+
+/* pads or bats */
+.bat
+{
+    --position : 40;
+    width: 1.5vh;
+    height: 10vh;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(var(--position)*1vh);
+    transform: translateY(-50%);
+}
+
+/* left pad */
+#pad-left
+{
+    left: 1vw;
+}
+/* right pad */
+#pad-right
+{
+    right: 1vw;
+}
+
+/* ball */
+#ball
+{
+    --x:40;
+    --y:40; 
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: var(--ball);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(var(--y)*1vh);
+    left: calc(var(--x)*1vw);
+    transform: translate(-50%,-50%);
+}
+
+/* hide classs */
+.hide
+{
+    display: none !important;
+}
+
+
+/* start menu */
+#start-menu
+{
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    width: 25vw;
+    height: 35vh;
+    display:block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 2px 8px 5px var(--dark);
+}
+#start-menu h2
+{
+    margin: 0;
+    font-size: 2rem;
+    color: var(--dark);
+    letter-spacing: 10px;
+}
+
+.glass-div {
+    background: rgba(259, 201, 164, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#start-menu button
+{
+    width: 20vw;
+    height: 8vh;
+    max-width: 200px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: var(--dark);   
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid var(--light);
+    background-color: var(--vlight);
+    border-radius: 5px;
+}
+
+#start-menu button:hover{
+    cursor: pointer;
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    color: var(--vlight);
+}
+
+
+/* game over window */
+
+#game-over
+{
+    position: absolute;
+    top: 25%;
+    width: 26vw;
+    height: auto;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    border-radius: 10px;
+    color: var(--vlight);
+    background-color: rgba(78, 63, 62, 0.8);
+    backdrop-filter: blur(5px);
+}
+#game-over >h3
+{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: red;
+    text-transform: uppercase;
+}
+#game-over p
+{
+    margin: 0;
+    margin-top: 2vh;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#game-over button
+{
+    align-self: center;
+    font-size: 1rem;
+    padding: 2px 10px;
+    cursor: pointer;
+    margin-top: 2vh;
+    max-width: 150px;
+    font-size: 1rem;
+    margin-top: 15px;
+    font-family: inherit;
+    border: none;
+    background-color: yellow;
+    padding: 5px 10px;
+}
+#game-over button:hover
+{
+    box-shadow: 1px 1px 5px 2px var(--vlight);
+}

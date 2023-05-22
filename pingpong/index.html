@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <title>Ping Pong</title>
+
+</head>
+<body>
+
+
+    <!-- <div id="rules" >
+        <h1>RULES</h1>
+        <h2>Movements</h2>
+        <p>Press ArrowUp or W to move UP</p>
+        <p>Press ArrowDown or S to move DOWN</p>
+        <h2>Score</h2>
+        <p>Score below 10 points - 1 point</p>
+        <p>Score between 10 to 25 points - 2 point</p>
+        <p>Score after 25 points - 3 point</p>
+    </div>
+     -->
+
+    <div id="start-menu" class="glass-div">
+        <h2>PING </h2>
+        <h2>PONG </h2>
+        <div>
+            <button id="start-game">Start</button>
+            <!-- <button id="rules">Rules</button> -->
+        </div>
+    </div>
+    
+    <div id="score" class="hide score-glass-div">
+        <div class="score-cont">
+            Score - <span id="curr-score">0</span>
+        </div>
+        
+        <div class="score-cont">
+          Highest Score - <span id="high-score">0</span>
+        </div>
+    </div>
+
+    <div id="cont" class="hide score-glass-div">
+        <div id="ball"></div>
+        <div class="bat" id="pad-right"></div>
+        <div class="bat" id="pad-left"></div>        
+    </div>
+
+    <div id="game-over" class="hide">
+        <h3>Game over</h3>
+        <p>Your Score - <span id="over-score">0</span></p>
+        <p>Highest Score - <span id="over-high">0</span></p>
+        <button id="issue">Play Again</button>
+    </div>
+</body>
+</html>
+
